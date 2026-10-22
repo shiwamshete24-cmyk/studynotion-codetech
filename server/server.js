@@ -1,8 +1,13 @@
 // Importing necessary modules and packages
 const express = require("express");
 const app = express();
+<<<<<<< HEAD:server/index.js
 const userRoutes = require("./routes/user")
 const profileRoutes = require("./routes/profile");
+=======
+const userRoutes = require("./routes/User");
+const profileRoutes = require("./routes/Profile");
+>>>>>>> cc5ac16d87fcc768e3f4526ccd59f6f36ed4641d:server/server.js
 const courseRoutes = require("./routes/Course");
 const paymentRoutes = require("./routes/Payments");
 const contactUsRoute = require("./routes/Contact");
@@ -21,7 +26,7 @@ dotenv.config();
 
 // Connecting to database
 database.connect();
-
+ 
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
